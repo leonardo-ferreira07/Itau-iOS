@@ -15,7 +15,7 @@ class RepositoriesLogicController: NSObject {
     private var repositoriesCells: [RepositoriesCell] = []
     private let activityView = UIActivityIndicatorView(style: .medium)
     private let bottomActivityView = UIActivityIndicatorView(style: .medium)
-    private var page: Int = 0
+    private var page: Int = 1
     private weak var tableView: UITableView!
     
     // MARK: Public methods
@@ -43,13 +43,13 @@ class RepositoriesLogicController: NSObject {
         tableView.register(UINib (nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: RepositoriesTypeCell.repository.rawValue)
     }
     
-    fileprivate func loadData(page: Int = 0) {
+    fileprivate func loadData(page: Int = 1) {
         
         reviewsViewModel.getData(page: page) { [weak self] (cells) in
             guard let self = self else { return }
             
             if self.reviewsViewModel.isLoadingContent {
-                self.handleLoading(page == 0)
+                self.handleLoading(page == 1)
             } else {
                 self.repositoriesCells = cells
                 DispatchQueue.main.async { [weak self] in
@@ -69,7 +69,7 @@ extension RepositoriesLogicController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let cell = cell as? RepositoryTableViewCell {
-//            cell.setCellImages(with: repositoriesCells[indexPath.row])
+            cell.setCellImages(with: repositoriesCells[indexPath.row])
         }
     }
     
@@ -102,7 +102,7 @@ extension RepositoriesLogicController: UITableViewDataSource {
         }
         
         if let cell = cell as? RepositoryTableViewCell {
-//            cell.setCell(with: repositoriesCells[indexPath.row])
+            cell.setCell(with: repositoriesCells[indexPath.row])
         }
         
         return cell

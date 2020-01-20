@@ -8,15 +8,15 @@
 
 import UIKit
 //import Kingfisher
-//
-//// MARK: - Wrapper for image loading library for easy change
-//
-//extension UIImageView {
-//    
-//    func loadImage(_ urlString: String?) {
-//        if let url = urlString {
+
+// MARK: - Wrapper for image loading library for easy change
+
+extension UIImageView {
+    
+    func loadImage(_ urlString: String?) {
+        if let url = urlString {
 //            kf.setImage(with: URL(string: url))
-//        }
-//    }
-//    
-//}
+        }
+    }
+    
+}
