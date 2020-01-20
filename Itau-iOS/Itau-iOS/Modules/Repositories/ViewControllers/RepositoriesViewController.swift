@@ -8,20 +8,18 @@
 
 import UIKit
 
-import UIKit
-
 class RepositoriesViewController: UITableViewController {
 
     var repositoriesLogicController: RepositoriesLogicController?
     
     // MARK: - Initialisers
-    
+
     init() {
         super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {

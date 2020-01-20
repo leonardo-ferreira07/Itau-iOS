@@ -13,8 +13,6 @@
 		A7AF075123D6003D000B9D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074F23D6003D000B9D49 /* LaunchScreen.storyboard */; };
 		A7AF075C23D6003D000B9D49 /* Itau_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF075B23D6003D000B9D49 /* Itau_iOSTests.swift */; };
 		A7AF076723D6003D000B9D49 /* Itau_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF076623D6003D000B9D49 /* Itau_iOSUITests.swift */; };
-		A7AF078323D601E9000B9D49 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078123D601E9000B9D49 /* RepositoriesViewController.swift */; };
-		A7AF078423D601E9000B9D49 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF078223D601E9000B9D49 /* RepositoriesViewController.xib */; };
 		A7AF078723D6040D000B9D49 /* RepositoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078623D6040D000B9D49 /* RepositoriesRequest.swift */; };
 		A7AF078923D60439000B9D49 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078823D60439000B9D49 /* NetworkError.swift */; };
 		A7AF078B23D60452000B9D49 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078A23D60452000B9D49 /* RequestProtocol.swift */; };
@@ -30,6 +28,8 @@
 		A7AF079F23D606B6000B9D49 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF079D23D606B6000B9D49 /* RepositoryTableViewCell.xib */; };
 		A7AF07A123D60714000B9D49 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A023D60714000B9D49 /* RepositoriesViewModel.swift */; };
 		A7AF07A423D6079F000B9D49 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A323D6079F000B9D49 /* Repository.swift */; };
+		A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */; };
+		A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,6 @@
 		A7AF076223D6003D000B9D49 /* Itau-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Itau-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF076623D6003D000B9D49 /* Itau_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itau_iOSUITests.swift; sourceTree = "<group>"; };
 		A7AF076823D6003D000B9D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7AF078123D601E9000B9D49 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
-		A7AF078223D601E9000B9D49 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 		A7AF078623D6040D000B9D49 /* RepositoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRequest.swift; sourceTree = "<group>"; };
 		A7AF078823D60439000B9D49 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A7AF078A23D60452000B9D49 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		A7AF079D23D606B6000B9D49 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		A7AF07A023D60714000B9D49 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		A7AF07A323D6079F000B9D49 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,8 +237,8 @@
 		A7AF077D23D600F4000B9D49 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A7AF078123D601E9000B9D49 /* RepositoriesViewController.swift */,
-				A7AF078223D601E9000B9D49 /* RepositoriesViewController.xib */,
+				A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */,
+				A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 			files = (
 				A7AF075123D6003D000B9D49 /* LaunchScreen.storyboard in Resources */,
 				A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */,
-				A7AF078423D601E9000B9D49 /* RepositoriesViewController.xib in Resources */,
+				A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */,
 				A7AF079F23D606B6000B9D49 /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +421,6 @@
 				A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */,
 				A7AF078723D6040D000B9D49 /* RepositoriesRequest.swift in Sources */,
 				A7AF079E23D606B6000B9D49 /* RepositoryTableViewCell.swift in Sources */,
-				A7AF078323D601E9000B9D49 /* RepositoriesViewController.swift in Sources */,
 				A7AF079423D604AA000B9D49 /* UIImageViewExtensions.swift in Sources */,
 				A7AF078B23D60452000B9D49 /* RequestProtocol.swift in Sources */,
 				A7AF079923D604ED000B9D49 /* URLConstants.swift in Sources */,
@@ -431,6 +430,7 @@
 				A7AF079523D604AA000B9D49 /* UIViewExtensions.swift in Sources */,
 				A7AF07A423D6079F000B9D49 /* Repository.swift in Sources */,
 				A7AF074723D6003A000B9D49 /* SceneDelegate.swift in Sources */,
+				A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */,
 				A7AF078923D60439000B9D49 /* NetworkError.swift in Sources */,
 				A7AF079B23D6065E000B9D49 /* RepositoriesLogicController.swift in Sources */,
 				A7AF078D23D60477000B9D49 /* NetworkRequester.swift in Sources */,
