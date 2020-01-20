@@ -1,0 +1,6 @@
+framework module Pods_Itau_iOS_Itau_iOSUITests {
+  umbrella header "Pods-Itau-iOS-Itau-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

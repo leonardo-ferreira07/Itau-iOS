@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B18D231A5D1DAE15C3F5D12 /* Pods_Itau_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */; };
+		5A5BA667A3FD7F135087BA74 /* Pods_Itau_iOS_Itau_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F4B308B53DC74C1A9EDFD0 /* Pods_Itau_iOS_Itau_iOSUITests.framework */; };
 		A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074423D6003A000B9D49 /* AppDelegate.swift */; };
 		A7AF074723D6003A000B9D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074623D6003A000B9D49 /* SceneDelegate.swift */; };
 		A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074D23D6003D000B9D49 /* Assets.xcassets */; };
@@ -30,6 +32,7 @@
 		A7AF07A423D6079F000B9D49 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A323D6079F000B9D49 /* Repository.swift */; };
 		A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */; };
 		A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */; };
+		B46A89CB9425AAC05EDC7044 /* Pods_Itau_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F4B308B53DC74C1A9EDFD0 /* Pods_Itau_iOS_Itau_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Itau_iOS_Itau_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F391EFE0B3347C7CB78678 /* Pods-Itau-iOS-Itau-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS-Itau-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Itau_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BE8242BC20373C51084CF5 /* Pods-Itau-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOSTests/Pods-Itau-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		758E2AC1C36C07007D197238 /* Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8499E5EB33CAC260973B79F2 /* Pods-Itau-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOSTests/Pods-Itau-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Itau_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF074123D6003A000B9D49 /* Itau-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itau-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF074423D6003A000B9D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AF074623D6003A000B9D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,8 @@
 		A7AF07A323D6079F000B9D49 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
+		E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46A89CB9425AAC05EDC7044 /* Pods_Itau_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B18D231A5D1DAE15C3F5D12 /* Pods_Itau_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +114,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5BA667A3FD7F135087BA74 /* Pods_Itau_iOS_Itau_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		743EC583A8ECA972F81A88E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */,
+				ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */,
+				758E2AC1C36C07007D197238 /* Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig */,
+				12F391EFE0B3347C7CB78678 /* Pods-Itau-iOS-Itau-iOSUITests.release.xcconfig */,
+				8499E5EB33CAC260973B79F2 /* Pods-Itau-iOSTests.debug.xcconfig */,
+				54BE8242BC20373C51084CF5 /* Pods-Itau-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F69498E6321C4DD1C91B36D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */,
+				03F4B308B53DC74C1A9EDFD0 /* Pods_Itau_iOS_Itau_iOSUITests.framework */,
+				972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7AF073823D6003A000B9D49 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +152,8 @@
 				A7AF075A23D6003D000B9D49 /* Itau-iOSTests */,
 				A7AF076523D6003D000B9D49 /* Itau-iOSUITests */,
 				A7AF074223D6003A000B9D49 /* Products */,
+				743EC583A8ECA972F81A88E9 /* Pods */,
+				9F69498E6321C4DD1C91B36D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7AF076B23D6003D000B9D49 /* Build configuration list for PBXNativeTarget "Itau-iOS" */;
 			buildPhases = (
+				5B84D8EE1C073D018144E1C8 /* [CP] Check Pods Manifest.lock */,
 				A7AF073D23D6003A000B9D49 /* Sources */,
 				A7AF073E23D6003A000B9D49 /* Frameworks */,
 				A7AF073F23D6003A000B9D49 /* Resources */,
+				62106F54EA79EF91228B7F78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7AF076E23D6003D000B9D49 /* Build configuration list for PBXNativeTarget "Itau-iOSTests" */;
 			buildPhases = (
+				9F830A3FEB603B64669A57B9 /* [CP] Check Pods Manifest.lock */,
 				A7AF075323D6003D000B9D49 /* Sources */,
 				A7AF075423D6003D000B9D49 /* Frameworks */,
 				A7AF075523D6003D000B9D49 /* Resources */,
@@ -327,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7AF077123D6003D000B9D49 /* Build configuration list for PBXNativeTarget "Itau-iOSUITests" */;
 			buildPhases = (
+				3A3545BCBAC73ACD094BCB4F /* [CP] Check Pods Manifest.lock */,
 				A7AF075E23D6003D000B9D49 /* Sources */,
 				A7AF075F23D6003D000B9D49 /* Frameworks */,
 				A7AF076023D6003D000B9D49 /* Resources */,
+				9190426397A2E6922F7CBF96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,6 +457,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A3545BCBAC73ACD094BCB4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Itau-iOS-Itau-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B84D8EE1C073D018144E1C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Itau-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62106F54EA79EF91228B7F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9190426397A2E6922F7CBF96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F830A3FEB603B64669A57B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Itau-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7AF073D23D6003A000B9D49 /* Sources */ = {
@@ -596,6 +745,7 @@
 		};
 		A7AF076C23D6003D000B9D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +764,7 @@
 		};
 		A7AF076D23D6003D000B9D49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,6 +783,7 @@
 		};
 		A7AF076F23D6003D000B9D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8499E5EB33CAC260973B79F2 /* Pods-Itau-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,6 +806,7 @@
 		};
 		A7AF077023D6003D000B9D49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BE8242BC20373C51084CF5 /* Pods-Itau-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,6 +829,7 @@
 		};
 		A7AF077223D6003D000B9D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758E2AC1C36C07007D197238 /* Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -696,6 +850,7 @@
 		};
 		A7AF077323D6003D000B9D49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F391EFE0B3347C7CB78678 /* Pods-Itau-iOS-Itau-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
