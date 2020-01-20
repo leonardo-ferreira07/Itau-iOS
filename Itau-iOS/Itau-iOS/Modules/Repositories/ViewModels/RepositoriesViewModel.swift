@@ -35,7 +35,7 @@ class GetYourGuideReviewsViewModel {
         response([])
         
         repositoriesRequest = RepositoriesRequest(page: page)
-        requester.performRequest(repositoriesRequest) { [weak self] (data: Repository?, error) in
+        requester.performRequest(repositoriesRequest) { [weak self] (data: Repositories?, error) in
             guard let self = self else { return }
             self.isLoadingContent = false
             
@@ -52,9 +52,9 @@ class GetYourGuideReviewsViewModel {
             if page == 0 {
                 self.cells = []
             }
-//            for repository in data?.reviews ?? [] {
-//                self.cells.append(RepositoriesCell.init(review))
-//            }
+            for repository in data?.items ?? [] {
+                self.cells.append(RepositoriesCell.init(repository))
+            }
             
             response(self.cells)
         }

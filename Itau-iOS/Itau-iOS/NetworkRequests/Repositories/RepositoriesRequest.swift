@@ -27,7 +27,7 @@ struct RepositoriesRequest: RequestProtocol {
     var queryItems: [URLQueryItem]? {
         return [URLQueryItem(name: "sort", value: "stars"),
                 URLQueryItem(name: "page", value: "\(page)"),
-                URLQueryItem(name: "language", value: "Java")]
+                URLQueryItem(name: "q", value: "language:Java")]
     }
     
     var headers: [String : String]?
