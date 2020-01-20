@@ -8,8 +8,12 @@
 
 import UIKit
 
-class RepositoriesViewController: UIViewController {
+import UIKit
 
+class RepositoriesViewController: UITableViewController {
+
+    var repositoriesLogicController: RepositoriesLogicController?
+    
     // MARK: - Initialisers
     
     init() {
@@ -23,7 +27,34 @@ class RepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configureViewControllerTitle()
+        setLogicControllers()
+        loadTableView()
     }
+    
+}
 
+// MARK: - Logic Controller
+
+extension RepositoriesViewController {
+    
+    func setLogicControllers() {
+        repositoriesLogicController = RepositoriesLogicController(tableView: tableView)
+    }
+    
+    func loadTableView() {
+        repositoriesLogicController?.loadTableView()
+    }
+}
+
+// MARK: - UI Title configuration
+
+extension RepositoriesViewController {
+    
+    private func configureViewControllerTitle() {
+        title = "Repositories"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
+    }
+    
 }
