@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import Kingfisher
+import Kingfisher
 
 // MARK: - Wrapper for image loading library for easy change
 
@@ -15,7 +15,7 @@ extension UIImageView {
     
     func loadImage(_ urlString: String?) {
         if let url = urlString {
-//            kf.setImage(with: URL(string: url))
+            kf.setImage(with: URL(string: url))
         }
     }
     
