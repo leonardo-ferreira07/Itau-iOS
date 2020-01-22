@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PullRequestsListView: UIView {
+class PullRequestsListView: BaseView<PullRequestsViewModel>, NibInitializableView {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet private weak var tableView: UITableView!

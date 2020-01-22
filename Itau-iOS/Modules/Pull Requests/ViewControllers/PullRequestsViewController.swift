@@ -8,23 +8,24 @@
 
 import UIKit
 
-class PullRequestsViewController: UIViewController {
+class PullRequestsViewController: BaseController<PullRequestsListView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configureViewControllerTitle()
     }
+    
+}
 
+// MARK: - UI Title configuration
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension PullRequestsViewController {
+    
+    private func configureViewControllerTitle() {
+        title = "Repositories"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
-    */
-
+    
 }
