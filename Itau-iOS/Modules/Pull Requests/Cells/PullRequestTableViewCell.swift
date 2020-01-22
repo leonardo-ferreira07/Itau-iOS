@@ -10,6 +10,11 @@ import UIKit
 
 class PullRequestTableViewCell: BaseCell<PullRequestsViewModel> {
 
+    @IBOutlet private weak var title: UILabel!
+    @IBOutlet private weak var body: UILabel!
+    @IBOutlet private weak var author: UILabel!
+    @IBOutlet private weak var date: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +26,14 @@ class PullRequestTableViewCell: BaseCell<PullRequestsViewModel> {
         // Configure the view for the selected state
     }
     
+}
+
+extension PullRequestTableViewCell: ItemizableCell {
+    func configure(_ item: Itemizable, at indexPath: IndexPath) {
+        guard let item = item as? PullRequestCellViewModel else { return }
+        title.text = item.output.title
+        body.text = item.output.body
+        author.text = item.output.user.login
+        date.text = item.output.date
+    }
 }
