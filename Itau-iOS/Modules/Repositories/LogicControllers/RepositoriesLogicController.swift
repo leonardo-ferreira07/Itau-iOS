@@ -82,6 +82,13 @@ extension RepositoriesLogicController: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewModel = PullRequestsViewModel(propertyId: 0)
+        let controller = PullRequestsViewController(viewModel: viewModel)
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.parentViewController?.navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }
 
 // MARK: - Table View Data Source
