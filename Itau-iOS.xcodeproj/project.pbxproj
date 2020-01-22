@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -131,7 +131,6 @@
 				8499E5EB33CAC260973B79F2 /* Pods-Itau-iOSTests.debug.xcconfig */,
 				54BE8242BC20373C51084CF5 /* Pods-Itau-iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +142,13 @@
 				972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7122BBB23D885CF00DB9D34 /* Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Pull Requests";
 			sourceTree = "<group>";
 		};
 		A7AF073823D6003A000B9D49 = {
@@ -305,6 +311,7 @@
 		A7AF078023D601C3000B9D49 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A7122BBB23D885CF00DB9D34 /* Pull Requests */,
 				A7AF077A23D600D9000B9D49 /* Repositories */,
 			);
 			path = Modules;

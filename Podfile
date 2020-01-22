@@ -6,6 +6,9 @@ target 'Itau-iOS' do
   use_frameworks!
 
   pod 'Kingfisher', '~> 5.0'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxDataSources'
 
   target 'Itau-iOSTests' do
     inherit! :search_paths
