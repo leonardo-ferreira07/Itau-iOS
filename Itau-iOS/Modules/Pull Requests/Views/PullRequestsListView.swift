@@ -32,10 +32,14 @@ private extension PullRequestsListView {
 
     func bind() {
 
-//        viewModel.output.cells
-//            .map(transformRentersCells)
-//            .drive(tableView.rx.items(dataSource: dataSource))
-//            .disposed(by: bag)
+        viewModel.output.cells
+            .map(transformRentersCells)
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: bag)
+    }
+    
+    func transformRentersCells(_ cells: PullRequestsViewModel.PullRequestType) -> [GenericSection] {
+        return [GenericSection(title: nil, items: cells)].filter { $0.items.count > 0 }
     }
 
 }

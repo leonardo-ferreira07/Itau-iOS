@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 
 struct PullRequestsViewModel: ViewModel {
+    
+    typealias PullRequestType = [PullRequestCellViewModel]
 
     let output: Output
 
@@ -19,11 +21,11 @@ struct PullRequestsViewModel: ViewModel {
 //    private let activityTracker = RxActivityTracker()
     
     // MARK: Outputs
-    private let pullRequests = PublishSubject<[PullRequest]>()
+    private let pullRequests = PublishSubject<PullRequestType>()
 
     init(propertyId: Int) {
 
-        let emptyPullRequests: [PullRequest] = []
+        let emptyPullRequests: PullRequestType = []
 
         self.output = Output(cells: pullRequests.asDriver(onErrorJustReturn: emptyPullRequests))
         self.propertyId = propertyId
@@ -36,7 +38,16 @@ struct PullRequestsViewModel: ViewModel {
 private extension PullRequestsViewModel {
     
     func requestPullRequests() {
-        
+        let requester: NetworkRequester = NetworkRequester()
+        let repositoriesRequest = PullRequestsRequest(owner: "ReactiveX", repository: "RxSwift")
+        requester.performRequest(repositoriesRequest) { (data: [PullRequest]?, error) in
+            guard let data = data else { return }
+            var pulls: PullRequestType = []
+            for pull in data {
+                pulls.append(PullRequestCellViewModel.init(pullRequest: pull))
+            }
+            self.pullRequests.onNext(pulls)
+        }
     }
     
 }
@@ -45,7 +56,7 @@ private extension PullRequestsViewModel {
 extension PullRequestsViewModel {
     
     struct Output {
-        let cells: Driver<[PullRequest]>
+        let cells: Driver<PullRequestType>
     }
 }
     

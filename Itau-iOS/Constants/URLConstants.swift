@@ -11,6 +11,7 @@ import Foundation
 struct URLConstants {
     
     static let repositoriesURL: String = "https://api.github.com/search/repositories"
+    static let pullRequestsURL: String = "https://api.github.com/repos/%@/%@/pulls"
     
 }
 
