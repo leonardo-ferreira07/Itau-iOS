@@ -31,26 +31,29 @@ class RepositoryTableViewCell: UITableViewCell {
     func setCell(with cell: RepositoriesCell) {
         let repository = cell.repository
         repoName.text = repository?.name
-        repoName.accessibilityLabel = "nome do repositório"
-        repoName.accessibilityValue = repository?.name
         repoDescription.text = repository?.description
-        repoDescription.accessibilityLabel = "descrição do repositório"
-        repoDescription.accessibilityValue = repository?.description
         stars.text = "\(repository?.stars ?? 0)"
-        stars.accessibilityLabel = "número de estrelas do repositório"
-        stars.accessibilityValue = "\(repository?.stars ?? 0)"
         forks.text = "\(repository?.forks ?? 0)"
-        forks.accessibilityLabel = "número de forks do repositório"
-        forks.accessibilityValue = "\(repository?.forks ?? 0)"
         userName.text = repository?.owner.login
-        userName.accessibilityLabel = "nome do usuário dono do repositório"
-        userName.accessibilityValue = repository?.owner.login
-        
+        addAccessibility(repository)
     }
     
     func setCellImages(with cell: RepositoriesCell) {
         let repository = cell.repository
         profilePicture.loadImage(repository?.owner.avatar)
         profilePicture.accessibilityLabel = "foto do usuário dono do repositório"
+    }
+    
+    private func addAccessibility(_ repository: Repository?) {
+        repoName.accessibilityLabel = "nome do repositório"
+        repoName.accessibilityValue = repository?.name
+        repoDescription.accessibilityLabel = "descrição do repositório"
+        repoDescription.accessibilityValue = repository?.description
+        stars.accessibilityLabel = "número de estrelas do repositório"
+        stars.accessibilityValue = "\(repository?.stars ?? 0)"
+        forks.accessibilityLabel = "número de forks do repositório"
+        forks.accessibilityValue = "\(repository?.forks ?? 0)"
+        userName.accessibilityLabel = "nome do usuário dono do repositório"
+        userName.accessibilityValue = repository?.owner.login
     }
 }
