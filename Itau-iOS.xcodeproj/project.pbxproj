@@ -20,6 +20,14 @@
 		A7122BDA23D888C500DB9D34 /* RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BD923D888C500DB9D34 /* RegistrableCell.swift */; };
 		A7122BDC23D888DE00DB9D34 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BDB23D888DE00DB9D34 /* ReusableCell.swift */; };
 		A7122BDE23D8894200DB9D34 /* PullRequestsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BDD23D8894200DB9D34 /* PullRequestsViewModel.swift */; };
+		A7122BE123D88A4E00DB9D34 /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BDF23D88A4E00DB9D34 /* PullRequestTableViewCell.swift */; };
+		A7122BE223D88A4E00DB9D34 /* PullRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7122BE023D88A4E00DB9D34 /* PullRequestTableViewCell.xib */; };
+		A7122BE423D88A8900DB9D34 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BE323D88A8800DB9D34 /* UITableView+Register.swift */; };
+		A7122BE623D88AC500DB9D34 /* RxGenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BE523D88AC500DB9D34 /* RxGenericTableViewDataSource.swift */; };
+		A7122BE823D88B2600DB9D34 /* GenericSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BE723D88B2600DB9D34 /* GenericSection.swift */; };
+		A7122BEA23D88B3500DB9D34 /* ItemizableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BE923D88B3500DB9D34 /* ItemizableViewModel.swift */; };
+		A7122BEC23D88B6900DB9D34 /* ItemizableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BEB23D88B6900DB9D34 /* ItemizableCell.swift */; };
+		A7122BEE23D88BDB00DB9D34 /* PullRequestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BED23D88BDB00DB9D34 /* PullRequestCellViewModel.swift */; };
 		A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074423D6003A000B9D49 /* AppDelegate.swift */; };
 		A7AF074723D6003A000B9D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074623D6003A000B9D49 /* SceneDelegate.swift */; };
 		A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074D23D6003D000B9D49 /* Assets.xcassets */; };
@@ -82,6 +90,14 @@
 		A7122BD923D888C500DB9D34 /* RegistrableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrableCell.swift; sourceTree = "<group>"; };
 		A7122BDB23D888DE00DB9D34 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		A7122BDD23D8894200DB9D34 /* PullRequestsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsViewModel.swift; sourceTree = "<group>"; };
+		A7122BDF23D88A4E00DB9D34 /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestTableViewCell.swift; sourceTree = "<group>"; };
+		A7122BE023D88A4E00DB9D34 /* PullRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestTableViewCell.xib; sourceTree = "<group>"; };
+		A7122BE323D88A8800DB9D34 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		A7122BE523D88AC500DB9D34 /* RxGenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		A7122BE723D88B2600DB9D34 /* GenericSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSection.swift; sourceTree = "<group>"; };
+		A7122BE923D88B3500DB9D34 /* ItemizableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemizableViewModel.swift; sourceTree = "<group>"; };
+		A7122BEB23D88B6900DB9D34 /* ItemizableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemizableCell.swift; sourceTree = "<group>"; };
+		A7122BED23D88BDB00DB9D34 /* PullRequestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCellViewModel.swift; sourceTree = "<group>"; };
 		A7AF074123D6003A000B9D49 /* Itau-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itau-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF074423D6003A000B9D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AF074623D6003A000B9D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +212,8 @@
 		A7122BBE23D8862300DB9D34 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A7122BDF23D88A4E00DB9D34 /* PullRequestTableViewCell.swift */,
+				A7122BE023D88A4E00DB9D34 /* PullRequestTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				A7122BDD23D8894200DB9D34 /* PullRequestsViewModel.swift */,
+				A7122BED23D88BDB00DB9D34 /* PullRequestCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,6 +246,11 @@
 				A7122BD723D888AB00DB9D34 /* ViewModel.swift */,
 				A7122BD923D888C500DB9D34 /* RegistrableCell.swift */,
 				A7122BDB23D888DE00DB9D34 /* ReusableCell.swift */,
+				A7122BE323D88A8800DB9D34 /* UITableView+Register.swift */,
+				A7122BE523D88AC500DB9D34 /* RxGenericTableViewDataSource.swift */,
+				A7122BE723D88B2600DB9D34 /* GenericSection.swift */,
+				A7122BE923D88B3500DB9D34 /* ItemizableViewModel.swift */,
+				A7122BEB23D88B6900DB9D34 /* ItemizableCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -523,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7122BE223D88A4E00DB9D34 /* PullRequestTableViewCell.xib in Resources */,
 				A7AF075123D6003D000B9D49 /* LaunchScreen.storyboard in Resources */,
 				A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */,
 				A7122BCD23D8875200DB9D34 /* PullRequestsListView.xib in Resources */,
@@ -657,13 +682,17 @@
 			files = (
 				A7AF079323D604AA000B9D49 /* StringExtensions.swift in Sources */,
 				A7122BDA23D888C500DB9D34 /* RegistrableCell.swift in Sources */,
+				A7122BE123D88A4E00DB9D34 /* PullRequestTableViewCell.swift in Sources */,
 				A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */,
 				A7122BCB23D8874000DB9D34 /* PullRequestsListView.swift in Sources */,
 				A7AF078723D6040D000B9D49 /* RepositoriesRequest.swift in Sources */,
+				A7122BEA23D88B3500DB9D34 /* ItemizableViewModel.swift in Sources */,
 				A7AF079E23D606B6000B9D49 /* RepositoryTableViewCell.swift in Sources */,
 				A7122BD223D8885A00DB9D34 /* View.swift in Sources */,
+				A7122BEE23D88BDB00DB9D34 /* PullRequestCellViewModel.swift in Sources */,
 				A7122BD023D8884400DB9D34 /* BaseViewController.swift in Sources */,
 				A7AF079423D604AA000B9D49 /* UIImageViewExtensions.swift in Sources */,
+				A7122BE623D88AC500DB9D34 /* RxGenericTableViewDataSource.swift in Sources */,
 				A7AF078B23D60452000B9D49 /* RequestProtocol.swift in Sources */,
 				A7122BC623D8866900DB9D34 /* PullRequestsViewController.swift in Sources */,
 				A7AF079923D604ED000B9D49 /* URLConstants.swift in Sources */,
@@ -678,10 +707,13 @@
 				A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */,
 				A7122BD623D8889400DB9D34 /* BaseView.swift in Sources */,
 				A7AF078923D60439000B9D49 /* NetworkError.swift in Sources */,
+				A7122BE823D88B2600DB9D34 /* GenericSection.swift in Sources */,
 				A7122BDE23D8894200DB9D34 /* PullRequestsViewModel.swift in Sources */,
 				A7AF079B23D6065E000B9D49 /* RepositoriesLogicController.swift in Sources */,
+				A7122BEC23D88B6900DB9D34 /* ItemizableCell.swift in Sources */,
 				A7122BD823D888AB00DB9D34 /* ViewModel.swift in Sources */,
 				A7AF078D23D60477000B9D49 /* NetworkRequester.swift in Sources */,
+				A7122BE423D88A8900DB9D34 /* UITableView+Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

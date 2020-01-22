@@ -7,10 +7,35 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class PullRequestsListView: BaseView<PullRequestsViewModel>, NibInitializableView {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet private weak var tableView: UITableView!
+
+    fileprivate let dataSource = RxGenericTableViewDataSource()
+    private let bag = DisposeBag()
+
+    override func layout() {
+        tableView.registerRegisterableCell(PullRequestTableViewCell.self)
+    }
+
+    override func didLoad() {
+        bind()
+    }
+    
+}
+
+private extension PullRequestsListView {
+
+    func bind() {
+
+//        viewModel.output.cells
+//            .map(transformRentersCells)
+//            .drive(tableView.rx.items(dataSource: dataSource))
+//            .disposed(by: bag)
+    }
 
 }
