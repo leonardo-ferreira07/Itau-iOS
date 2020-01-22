@@ -37,7 +37,7 @@ class RepositoriesViewController: UITableViewController {
 extension RepositoriesViewController {
     
     func setLogicControllers() {
-        repositoriesLogicController = RepositoriesLogicController(tableView: tableView)
+        repositoriesLogicController = RepositoriesLogicController(tableView: tableView, navigator: RepositoriesNavigator.init(navController: navigationController))
     }
     
     func loadTableView() {

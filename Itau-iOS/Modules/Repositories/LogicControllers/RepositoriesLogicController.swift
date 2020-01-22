@@ -17,10 +17,11 @@ class RepositoriesLogicController: NSObject {
     private let bottomActivityView = UIActivityIndicatorView(style: .medium)
     private var page: Int = 1
     private weak var tableView: UITableView!
+    private var repositoriesNavigator: RepositoriesNavigator!
     
     // MARK: Public methods
     
-    init(tableView: UITableView) {
+    init(tableView: UITableView, navigator: RepositoriesNavigator) {
         super.init()
         
         tableView.dataSource = self
@@ -28,6 +29,7 @@ class RepositoriesLogicController: NSObject {
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = UITableView.automaticDimension
         self.tableView = tableView
+        self.repositoriesNavigator = navigator
         
         setLoading()
         registerCells()
@@ -84,10 +86,7 @@ extension RepositoriesLogicController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let repo = repositoriesCells[indexPath.row].repository else { return }
-        let viewModel = PullRequestsViewModel(repository: repo)
-        let controller = PullRequestsViewController(viewModel: viewModel)
-        let cell = tableView.cellForRow(at: indexPath)
-        cell?.parentViewController?.navigationController?.pushViewController(controller, animated: true)
+        repositoriesNavigator.navigate(to: .pullRequests(repository: repo))
     }
     
 }
