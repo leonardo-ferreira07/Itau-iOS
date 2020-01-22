@@ -83,7 +83,8 @@ extension RepositoriesLogicController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewModel = PullRequestsViewModel(propertyId: 0)
+        guard let repo = repositoriesCells[indexPath.row].repository else { return }
+        let viewModel = PullRequestsViewModel(repository: repo)
         let controller = PullRequestsViewController(viewModel: viewModel)
         let cell = tableView.cellForRow(at: indexPath)
         cell?.parentViewController?.navigationController?.pushViewController(controller, animated: true)

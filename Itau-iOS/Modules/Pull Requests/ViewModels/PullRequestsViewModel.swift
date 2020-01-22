@@ -17,18 +17,17 @@ struct PullRequestsViewModel: ViewModel {
     let output: Output
 
     private let bag = DisposeBag()
-    private let propertyId: Int
-//    private let activityTracker = RxActivityTracker()
+    private let repository: Repository
     
     // MARK: Outputs
     private let pullRequests = PublishSubject<PullRequestType>()
 
-    init(propertyId: Int) {
+    init(repository: Repository) {
 
         let emptyPullRequests: PullRequestType = []
 
         self.output = Output(cells: pullRequests.asDriver(onErrorJustReturn: emptyPullRequests))
-        self.propertyId = propertyId
+        self.repository = repository
         
         requestPullRequests()
     }
@@ -39,7 +38,7 @@ private extension PullRequestsViewModel {
     
     func requestPullRequests() {
         let requester: NetworkRequester = NetworkRequester()
-        let repositoriesRequest = PullRequestsRequest(owner: "ReactiveX", repository: "RxSwift")
+        let repositoriesRequest = PullRequestsRequest(owner: repository.owner.login, repository: repository.name)
         requester.performRequest(repositoriesRequest) { (data: [PullRequest]?, error) in
             guard let data = data else { return }
             var pulls: PullRequestType = []
