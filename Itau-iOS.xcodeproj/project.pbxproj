@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B18D231A5D1DAE15C3F5D12 /* Pods_Itau_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */; };
 		5A5BA667A3FD7F135087BA74 /* Pods_Itau_iOS_Itau_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F4B308B53DC74C1A9EDFD0 /* Pods_Itau_iOS_Itau_iOSUITests.framework */; };
+		A7122BC623D8866900DB9D34 /* PullRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BC423D8866900DB9D34 /* PullRequestsViewController.swift */; };
+		A7122BCB23D8874000DB9D34 /* PullRequestsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7122BCA23D8874000DB9D34 /* PullRequestsListView.swift */; };
+		A7122BCD23D8875200DB9D34 /* PullRequestsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7122BCC23D8875200DB9D34 /* PullRequestsListView.xib */; };
 		A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074423D6003A000B9D49 /* AppDelegate.swift */; };
 		A7AF074723D6003A000B9D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074623D6003A000B9D49 /* SceneDelegate.swift */; };
 		A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074D23D6003D000B9D49 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		758E2AC1C36C07007D197238 /* Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS-Itau-iOSUITests/Pods-Itau-iOS-Itau-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8499E5EB33CAC260973B79F2 /* Pods-Itau-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOSTests/Pods-Itau-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		972281CCA7E512BF19B6592E /* Pods_Itau_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Itau_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7122BC423D8866900DB9D34 /* PullRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsViewController.swift; sourceTree = "<group>"; };
+		A7122BCA23D8874000DB9D34 /* PullRequestsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsListView.swift; sourceTree = "<group>"; };
+		A7122BCC23D8875200DB9D34 /* PullRequestsListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestsListView.xib; sourceTree = "<group>"; };
 		A7AF074123D6003A000B9D49 /* Itau-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itau-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF074423D6003A000B9D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AF074623D6003A000B9D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,8 +153,51 @@
 		A7122BBB23D885CF00DB9D34 /* Pull Requests */ = {
 			isa = PBXGroup;
 			children = (
+				A7122BC823D8871200DB9D34 /* Views */,
+				A7122BBF23D8862900DB9D34 /* ViewModels */,
+				A7122BBE23D8862300DB9D34 /* Cells */,
+				A7122BBD23D8861B00DB9D34 /* ViewControllers */,
+				A7122BBC23D8861500DB9D34 /* Models */,
 			);
 			path = "Pull Requests";
+			sourceTree = "<group>";
+		};
+		A7122BBC23D8861500DB9D34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7122BBD23D8861B00DB9D34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7122BC423D8866900DB9D34 /* PullRequestsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A7122BBE23D8862300DB9D34 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7122BBF23D8862900DB9D34 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7122BC823D8871200DB9D34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7122BCA23D8874000DB9D34 /* PullRequestsListView.swift */,
+				A7122BCC23D8875200DB9D34 /* PullRequestsListView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A7AF073823D6003A000B9D49 = {
@@ -444,6 +493,7 @@
 			files = (
 				A7AF075123D6003D000B9D49 /* LaunchScreen.storyboard in Resources */,
 				A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */,
+				A7122BCD23D8875200DB9D34 /* PullRequestsListView.xib in Resources */,
 				A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */,
 				A7AF079F23D606B6000B9D49 /* RepositoryTableViewCell.xib in Resources */,
 			);
@@ -575,10 +625,12 @@
 			files = (
 				A7AF079323D604AA000B9D49 /* StringExtensions.swift in Sources */,
 				A7AF074523D6003A000B9D49 /* AppDelegate.swift in Sources */,
+				A7122BCB23D8874000DB9D34 /* PullRequestsListView.swift in Sources */,
 				A7AF078723D6040D000B9D49 /* RepositoriesRequest.swift in Sources */,
 				A7AF079E23D606B6000B9D49 /* RepositoryTableViewCell.swift in Sources */,
 				A7AF079423D604AA000B9D49 /* UIImageViewExtensions.swift in Sources */,
 				A7AF078B23D60452000B9D49 /* RequestProtocol.swift in Sources */,
+				A7122BC623D8866900DB9D34 /* PullRequestsViewController.swift in Sources */,
 				A7AF079923D604ED000B9D49 /* URLConstants.swift in Sources */,
 				A7AF079623D604AA000B9D49 /* URLRequestExtensions.swift in Sources */,
 				A7AF079723D604AA000B9D49 /* ArrayExtensions.swift in Sources */,
