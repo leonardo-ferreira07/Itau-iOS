@@ -9,6 +9,7 @@ target 'Itau-iOS' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'RxDataSources'
+  pod 'MarkdownKit'
 
   target 'Itau-iOSTests' do
     inherit! :search_paths
