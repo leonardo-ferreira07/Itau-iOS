@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 typealias DataResponse = (Data?, NetworkError?) -> Void
 
@@ -53,6 +54,32 @@ class NetworkRequester: NSObject {
         
         performRequest(urlRequest, completion: completion)
         
+    }
+    
+    
+    func dispatch(_ urlRequest: URLRequest) -> Observable<Any> {
+        return Observable<Any>.create { [weak self] observer in
+            self?.performRequest(urlRequest, completion: { data, error  in
+                if let error = error {
+                    DispatchQueue.main.async {
+                        observer.onError(error)
+                    }
+                    return
+                }
+                
+                guard let data = data else {
+                    DispatchQueue.main.async {
+                        observer.onError(NetworkError.unknown("No error from server and data is nil."))
+                    }
+                    return
+                }
+                DispatchQueue.main.async {
+                    observer.onNext(data)
+                    observer.onCompleted()
+                }
+            })
+            return Disposables.create {}
+        }
     }
     
     /// Fetch data from URL with NSUrlSession

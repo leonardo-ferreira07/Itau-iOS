@@ -23,7 +23,7 @@ class PullRequestsViewController: BaseController<PullRequestsListView> {
 extension PullRequestsViewController {
     
     private func configureViewControllerTitle() {
-        title = "Repositories"
+        title = "Pull Requests"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
     }

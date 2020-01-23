@@ -31,6 +31,14 @@ struct PullRequestsViewModel: ViewModel {
         
         requestPullRequests()
     }
+    
+//    func requestPullRequests() {
+//        let pullRequestsRequest = PullRequestsRequest(owner: repository.owner.login, repository: repository.name)
+//        _ = pullRequestsRequest.dispatchRequest()
+//            .map({ $0.map(PullRequestCellViewModel.init) })
+//            .bind(onNext: pullRequests.onNext)
+//            .disposed(by: bag)
+//    }
 }
 
 // MARK: - Private methods
@@ -38,15 +46,14 @@ private extension PullRequestsViewModel {
     
     func requestPullRequests() {
         let requester: NetworkRequester = NetworkRequester()
-        let repositoriesRequest = PullRequestsRequest(owner: repository.owner.login, repository: repository.name)
-        requester.performRequest(repositoriesRequest) { (data: [PullRequest]?, error) in
-            guard let data = data else { return }
-            var pulls: PullRequestType = []
-            for pull in data {
-                pulls.append(PullRequestCellViewModel.init(pullRequest: pull))
-            }
-            self.pullRequests.onNext(pulls)
-        }
+        let pullRequestsRequest = PullRequestsRequest(owner: repository.owner.login, repository: repository.name)
+        guard let url = pullRequestsRequest.urlRequest else { return }
+
+        _ = requester.dispatch(url)
+            .mapArray(PullRequest.self)
+            .map({ $0.map(PullRequestCellViewModel.init) })
+            .bind(onNext: pullRequests.onNext)
+            .disposed(by: bag)
     }
     
 }
@@ -58,4 +65,3 @@ extension PullRequestsViewModel {
         let cells: Driver<PullRequestType>
     }
 }
-    
