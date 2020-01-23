@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import MarkdownKit
 
 struct PullRequest: Decodable {
     let title: String
     let body: String
     let date: String
     let user: RepositoryOwner
+    
+    var bodyAttributed: NSAttributedString {
+        let markdownParser = MarkdownParser()
+        return markdownParser.parse(body)
+    }
     
     // MARK: - Coding Keys
     

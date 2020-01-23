@@ -20,7 +20,7 @@ struct PullRequestCellViewModel: ViewModel {
     let output: Output
 
     init(pullRequest: PullRequest) {
-        self.output = Output(title: pullRequest.title, body: pullRequest.body, date: pullRequest.date, user: pullRequest.user)
+        self.output = Output(title: pullRequest.title, body: pullRequest.body, bodyAttributed: pullRequest.bodyAttributed, date: pullRequest.date, user: pullRequest.user)
         self.title = pullRequest.title
         self.body = pullRequest.body
         self.date = pullRequest.date
@@ -36,6 +36,7 @@ extension PullRequestCellViewModel {
     struct Output {
         let title: String
         let body: String
+        let bodyAttributed: NSAttributedString
         let date: String
         let user: RepositoryOwner
     }

@@ -32,7 +32,7 @@ extension PullRequestTableViewCell: ItemizableCell {
     func configure(_ item: Itemizable, at indexPath: IndexPath) {
         guard let item = item as? PullRequestCellViewModel else { return }
         title.text = item.output.title
-        body.text = item.output.body
+        body.attributedText = item.output.bodyAttributed
         author.text = item.output.user.login
         date.text = item.output.date
         addAccessibility(item)
@@ -42,7 +42,7 @@ extension PullRequestTableViewCell: ItemizableCell {
         title.accessibilityLabel = "nome do pull request"
         title.accessibilityValue = item.output.title
         body.accessibilityLabel = "corpo do pull request"
-        body.accessibilityValue = item.output.body
+        body.accessibilityAttributedValue = item.output.bodyAttributed
         author.accessibilityLabel = "nome do autor do pull request"
         author.accessibilityValue = item.output.user.login
         date.accessibilityLabel = "data de criação do pull request"
