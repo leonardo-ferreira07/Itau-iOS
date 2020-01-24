@@ -27,7 +27,7 @@ struct PullRequestsViewModel: ViewModel {
 
         let emptyPullRequests: PullRequestType = []
 
-        self.output = Output(cells: pullRequests.asDriver(onErrorJustReturn: emptyPullRequests))
+        self.output = Output(cells: pullRequests.asDriver(onErrorJustReturn: emptyPullRequests), isLoading: activityTracker.asDriver(onErrorJustReturn: false))
         self.repository = repository
         
         requestPullRequests()
@@ -44,6 +44,7 @@ private extension PullRequestsViewModel {
         guard let url = pullRequestsRequest.urlRequest else { return }
 
         _ = requester.dispatch(url)
+            .track(activity: activityTracker)
             .mapArray(PullRequest.self)
             .map({ $0.map(PullRequestCellViewModel.init) })
             .bind(onNext: pullRequests.onNext)
@@ -57,5 +58,6 @@ extension PullRequestsViewModel {
     
     struct Output {
         let cells: Driver<PullRequestType>
+        let isLoading: Driver<Bool>
     }
 }

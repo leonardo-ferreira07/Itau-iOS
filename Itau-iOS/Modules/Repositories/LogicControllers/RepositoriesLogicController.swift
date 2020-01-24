@@ -13,7 +13,7 @@ class RepositoriesLogicController: NSObject {
     
     private lazy var reviewsViewModel: GetYourGuideReviewsViewModel = GetYourGuideReviewsViewModel()
     private var repositoriesCells: [RepositoriesCell] = []
-    private let activityView = UIActivityIndicatorView(style: .medium)
+    private let activityView = UIActivityIndicatorView(style: .large)
     private let bottomActivityView = UIActivityIndicatorView(style: .medium)
     private var page: Int = 1
     private weak var tableView: UITableView!

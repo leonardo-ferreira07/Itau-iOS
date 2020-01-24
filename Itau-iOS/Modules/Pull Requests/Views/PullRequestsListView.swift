@@ -19,6 +19,8 @@ class PullRequestsListView: BaseView<PullRequestsViewModel>, NibInitializableVie
     private let bag = DisposeBag()
 
     override func layout() {
+        setLoading()
+        startLoading()
         tableView.registerRegisterableCell(PullRequestTableViewCell.self)
     }
 
@@ -36,10 +38,27 @@ private extension PullRequestsListView {
             .map(transformRentersCells)
             .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: bag)
+        
+        viewModel.output.isLoading
+            .drive(onNext: { [weak self] isLoading in
+                isLoading ? self?.startLoading() : self?.stopLoading()
+            })
+            .disposed(by: bag)
     }
     
     func transformRentersCells(_ cells: PullRequestsViewModel.PullRequestType) -> [GenericSection] {
         return [GenericSection(title: nil, items: cells)].filter { $0.items.count > 0 }
     }
 
+}
+
+// MARK: - Loading UI
+
+private extension PullRequestsListView {
+    
+    private func setLoading() {
+        activityView.center = tableView.center
+        tableView.addSubview(activityView)
+    }
+    
 }

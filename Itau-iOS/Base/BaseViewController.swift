@@ -9,6 +9,7 @@
 import UIKit
 
 open class BaseController<ViewType: UIView & View>: UIViewController, Controller {
+    
     private(set) public var currentView = ViewType()
 
     open override func loadView() {

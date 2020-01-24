@@ -9,6 +9,7 @@
 import UIKit
 
 open class BaseCell<V: ViewModel>: UITableViewCell, RegisterableCell, View {
+    
     open var viewModel: V!
     open func layout() {}
     open func didLoad() {}
@@ -22,13 +23,24 @@ open class BaseCell<V: ViewModel>: UITableViewCell, RegisterableCell, View {
         super.layoutSubviews()
         layout()
     }
+    
 }
 
 open class BaseView<V: ViewModel>: UIView, View {
+    
+    let activityView = UIActivityIndicatorView(style: .large)
 
     open var viewModel: V!
     open func layout() {}
     open func didLoad() {}
+    
+    func startLoading() {
+        activityView.startAnimating()
+    }
+    
+    func stopLoading() {
+        activityView.stopAnimating()
+    }
 }
 
 // MARK: - NibInitializableView protocol
