@@ -38,7 +38,6 @@
 		A7AF074723D6003A000B9D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF074623D6003A000B9D49 /* SceneDelegate.swift */; };
 		A7AF074E23D6003D000B9D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074D23D6003D000B9D49 /* Assets.xcassets */; };
 		A7AF075123D6003D000B9D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AF074F23D6003D000B9D49 /* LaunchScreen.storyboard */; };
-		A7AF075C23D6003D000B9D49 /* Itau_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF075B23D6003D000B9D49 /* Itau_iOSTests.swift */; };
 		A7AF076723D6003D000B9D49 /* Itau_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF076623D6003D000B9D49 /* Itau_iOSUITests.swift */; };
 		A7AF078723D6040D000B9D49 /* RepositoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078623D6040D000B9D49 /* RepositoriesRequest.swift */; };
 		A7AF078923D60439000B9D49 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF078823D60439000B9D49 /* NetworkError.swift */; };
@@ -58,6 +57,11 @@
 		A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */; };
 		A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */; };
 		A7C38E0623DB2B3C006B84D0 /* RxActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */; };
+		A7D39A3323DB3346004E3120 /* ItauURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A2B23DB3345004E3120 /* ItauURLTests.swift */; };
+		A7D39A3423DB3346004E3120 /* MockJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A2D23DB3345004E3120 /* MockJSONLoader.swift */; };
+		A7D39A3523DB3346004E3120 /* AwesomeRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A2E23DB3345004E3120 /* AwesomeRequesterMock.swift */; };
+		A7D39A3623DB3346004E3120 /* NetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A3023DB3346004E3120 /* NetworkRequesterTests.swift */; };
+		A7D39A3723DB3346004E3120 /* RepositoriesLogicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A3223DB3346004E3120 /* RepositoriesLogicControllerTests.swift */; };
 		B46A89CB9425AAC05EDC7044 /* Pods_Itau_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +122,6 @@
 		A7AF075023D6003D000B9D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7AF075223D6003D000B9D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AF075723D6003D000B9D49 /* Itau-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Itau-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7AF075B23D6003D000B9D49 /* Itau_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itau_iOSTests.swift; sourceTree = "<group>"; };
 		A7AF075D23D6003D000B9D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AF076223D6003D000B9D49 /* Itau-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Itau-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF076623D6003D000B9D49 /* Itau_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itau_iOSUITests.swift; sourceTree = "<group>"; };
@@ -141,6 +144,11 @@
 		A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 		A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityTracker.swift; sourceTree = "<group>"; };
+		A7D39A2B23DB3345004E3120 /* ItauURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItauURLTests.swift; sourceTree = "<group>"; };
+		A7D39A2D23DB3345004E3120 /* MockJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockJSONLoader.swift; sourceTree = "<group>"; };
+		A7D39A2E23DB3345004E3120 /* AwesomeRequesterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeRequesterMock.swift; sourceTree = "<group>"; };
+		A7D39A3023DB3346004E3120 /* NetworkRequesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequesterTests.swift; sourceTree = "<group>"; };
+		A7D39A3223DB3346004E3120 /* RepositoriesLogicControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesLogicControllerTests.swift; sourceTree = "<group>"; };
 		E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,7 +344,10 @@
 		A7AF075A23D6003D000B9D49 /* Itau-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A7AF075B23D6003D000B9D49 /* Itau_iOSTests.swift */,
+				A7D39A2A23DB3345004E3120 /* Constants */,
+				A7D39A3123DB3346004E3120 /* LogicControllers */,
+				A7D39A2C23DB3345004E3120 /* Mocks */,
+				A7D39A2F23DB3346004E3120 /* Networking */,
 				A7AF075D23D6003D000B9D49 /* Info.plist */,
 			);
 			path = "Itau-iOSTests";
@@ -481,6 +492,39 @@
 				A7AF07A323D6079F000B9D49 /* Repository.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A7D39A2A23DB3345004E3120 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A2B23DB3345004E3120 /* ItauURLTests.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A7D39A2C23DB3345004E3120 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A2D23DB3345004E3120 /* MockJSONLoader.swift */,
+				A7D39A2E23DB3345004E3120 /* AwesomeRequesterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A7D39A2F23DB3346004E3120 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A3023DB3346004E3120 /* NetworkRequesterTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A7D39A3123DB3346004E3120 /* LogicControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A3223DB3346004E3120 /* RepositoriesLogicControllerTests.swift */,
+			);
+			path = LogicControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -773,7 +817,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AF075C23D6003D000B9D49 /* Itau_iOSTests.swift in Sources */,
+				A7D39A3723DB3346004E3120 /* RepositoriesLogicControllerTests.swift in Sources */,
+				A7D39A3423DB3346004E3120 /* MockJSONLoader.swift in Sources */,
+				A7D39A3523DB3346004E3120 /* AwesomeRequesterMock.swift in Sources */,
+				A7D39A3323DB3346004E3120 /* ItauURLTests.swift in Sources */,
+				A7D39A3623DB3346004E3120 /* NetworkRequesterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ struct RepositoriesCell {
     }
 }
 
-class GetYourGuideReviewsViewModel {
+class RepositoriesViewModel {
     
     private let requester: NetworkRequester = NetworkRequester()
     private var repositoriesRequest: RepositoriesRequest!

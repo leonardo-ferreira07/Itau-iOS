@@ -11,7 +11,7 @@ import UIKit
 
 class RepositoriesLogicController: NSObject {
     
-    private lazy var reviewsViewModel: GetYourGuideReviewsViewModel = GetYourGuideReviewsViewModel()
+    private lazy var repositoriesViewModel: RepositoriesViewModel = RepositoriesViewModel()
     private var repositoriesCells: [RepositoriesCell] = []
     private let activityView = UIActivityIndicatorView(style: .large)
     private let bottomActivityView = UIActivityIndicatorView(style: .medium)
@@ -47,10 +47,10 @@ class RepositoriesLogicController: NSObject {
     
     fileprivate func loadData(page: Int = 1) {
         
-        reviewsViewModel.getData(page: page) { [weak self] (cells) in
+        repositoriesViewModel.getData(page: page) { [weak self] (cells) in
             guard let self = self else { return }
             
-            if self.reviewsViewModel.isLoadingContent {
+            if self.repositoriesViewModel.isLoadingContent {
                 self.handleLoading(page == 1)
             } else {
                 self.repositoriesCells = cells

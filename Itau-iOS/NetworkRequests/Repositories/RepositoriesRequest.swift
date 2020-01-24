@@ -10,9 +10,9 @@ import Foundation
 
 struct RepositoriesRequest: RequestProtocol {
     
-    private var page: Int = 0
+    private var page: Int = 1
     
-    init(page: Int = 0) {
+    init(page: Int = 1) {
         self.page = page
     }
     
