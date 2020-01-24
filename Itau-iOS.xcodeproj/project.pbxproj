@@ -262,13 +262,11 @@
 				A7122BD723D888AB00DB9D34 /* ViewModel.swift */,
 				A7122BD923D888C500DB9D34 /* RegistrableCell.swift */,
 				A7122BDB23D888DE00DB9D34 /* ReusableCell.swift */,
-				A7122BE323D88A8800DB9D34 /* UITableView+Register.swift */,
 				A7122BE523D88AC500DB9D34 /* RxGenericTableViewDataSource.swift */,
 				A7122BE723D88B2600DB9D34 /* GenericSection.swift */,
 				A7122BE923D88B3500DB9D34 /* ItemizableViewModel.swift */,
 				A7122BEB23D88B6900DB9D34 /* ItemizableCell.swift */,
 				A7220A1C23D8A2580058FDBA /* AwesomeNavigator.swift */,
-				A74388F823DA3D2100BA74C8 /* ObservableExtension.swift */,
 				A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */,
 			);
 			path = Base;
@@ -375,6 +373,8 @@
 			children = (
 				A7AF079223D604AA000B9D49 /* ArrayExtensions.swift */,
 				A7AF078E23D604A9000B9D49 /* StringExtensions.swift */,
+				A7122BE323D88A8800DB9D34 /* UITableView+Register.swift */,
+				A74388F823DA3D2100BA74C8 /* ObservableExtension.swift */,
 				A7AF078F23D604A9000B9D49 /* UIImageViewExtensions.swift */,
 				A7AF079023D604A9000B9D49 /* UIViewExtensions.swift */,
 				A7AF079123D604A9000B9D49 /* URLRequestExtensions.swift */,

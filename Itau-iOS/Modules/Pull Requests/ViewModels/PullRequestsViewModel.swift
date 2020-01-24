@@ -17,6 +17,7 @@ struct PullRequestsViewModel: ViewModel {
     let output: Output
 
     private let bag = DisposeBag()
+    private let activityTracker = RxActivityTracker()
     private let repository: Repository
     
     // MARK: Outputs
@@ -32,13 +33,6 @@ struct PullRequestsViewModel: ViewModel {
         requestPullRequests()
     }
     
-//    func requestPullRequests() {
-//        let pullRequestsRequest = PullRequestsRequest(owner: repository.owner.login, repository: repository.name)
-//        _ = pullRequestsRequest.dispatchRequest()
-//            .map({ $0.map(PullRequestCellViewModel.init) })
-//            .bind(onNext: pullRequests.onNext)
-//            .disposed(by: bag)
-//    }
 }
 
 // MARK: - Private methods
