@@ -57,6 +57,7 @@
 		A7AF07A423D6079F000B9D49 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A323D6079F000B9D49 /* Repository.swift */; };
 		A7AF07A723D60B95000B9D49 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */; };
 		A7AF07A823D60B95000B9D49 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */; };
+		A7C38E0623DB2B3C006B84D0 /* RxActivityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */; };
 		B46A89CB9425AAC05EDC7044 /* Pods_Itau_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		A7AF07A323D6079F000B9D49 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		A7AF07A523D60B95000B9D49 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		A7AF07A623D60B95000B9D49 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
+		A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityTracker.swift; sourceTree = "<group>"; };
 		E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +269,7 @@
 				A7122BEB23D88B6900DB9D34 /* ItemizableCell.swift */,
 				A7220A1C23D8A2580058FDBA /* AwesomeNavigator.swift */,
 				A74388F823DA3D2100BA74C8 /* ObservableExtension.swift */,
+				A7C38E0523DB2B3C006B84D0 /* RxActivityTracker.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				A7122BEC23D88B6900DB9D34 /* ItemizableCell.swift in Sources */,
 				A7122BD823D888AB00DB9D34 /* ViewModel.swift in Sources */,
 				A7AF078D23D60477000B9D49 /* NetworkRequester.swift in Sources */,
+				A7C38E0623DB2B3C006B84D0 /* RxActivityTracker.swift in Sources */,
 				A7122BE423D88A8900DB9D34 /* UITableView+Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
