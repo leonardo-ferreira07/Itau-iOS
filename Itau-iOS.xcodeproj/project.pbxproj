@@ -62,6 +62,8 @@
 		A7D39A3523DB3346004E3120 /* AwesomeRequesterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A2E23DB3345004E3120 /* AwesomeRequesterMock.swift */; };
 		A7D39A3623DB3346004E3120 /* NetworkRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A3023DB3346004E3120 /* NetworkRequesterTests.swift */; };
 		A7D39A3723DB3346004E3120 /* RepositoriesLogicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A3223DB3346004E3120 /* RepositoriesLogicControllerTests.swift */; };
+		A7D39A3A23DB37AD004E3120 /* RepositoriesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D39A3923DB37AD004E3120 /* RepositoriesModelTests.swift */; };
+		A7D39A3D23DB3814004E3120 /* repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = A7D39A3C23DB3814004E3120 /* repositories.json */; };
 		B46A89CB9425AAC05EDC7044 /* Pods_Itau_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3553EE2C852C79C124B96BC4 /* Pods_Itau_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +151,8 @@
 		A7D39A2E23DB3345004E3120 /* AwesomeRequesterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeRequesterMock.swift; sourceTree = "<group>"; };
 		A7D39A3023DB3346004E3120 /* NetworkRequesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequesterTests.swift; sourceTree = "<group>"; };
 		A7D39A3223DB3346004E3120 /* RepositoriesLogicControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesLogicControllerTests.swift; sourceTree = "<group>"; };
+		A7D39A3923DB37AD004E3120 /* RepositoriesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesModelTests.swift; sourceTree = "<group>"; };
+		A7D39A3C23DB3814004E3120 /* repositories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = repositories.json; sourceTree = "<group>"; };
 		E4C45C28B4D8559B4120CBA0 /* Pods-Itau-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEA41D7408ECC6858F06F84 /* Pods-Itau-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Itau-iOS.release.xcconfig"; path = "Target Support Files/Pods-Itau-iOS/Pods-Itau-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -344,6 +348,7 @@
 		A7AF075A23D6003D000B9D49 /* Itau-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				A7D39A3823DB3789004E3120 /* Models */,
 				A7D39A2A23DB3345004E3120 /* Constants */,
 				A7D39A3123DB3346004E3120 /* LogicControllers */,
 				A7D39A2C23DB3345004E3120 /* Mocks */,
@@ -527,6 +532,23 @@
 			path = LogicControllers;
 			sourceTree = "<group>";
 		};
+		A7D39A3823DB3789004E3120 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A3B23DB37DE004E3120 /* JSONs */,
+				A7D39A3923DB37AD004E3120 /* RepositoriesModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7D39A3B23DB37DE004E3120 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				A7D39A3C23DB3814004E3120 /* repositories.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -649,6 +671,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D39A3D23DB3814004E3120 /* repositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +845,7 @@
 				A7D39A3523DB3346004E3120 /* AwesomeRequesterMock.swift in Sources */,
 				A7D39A3323DB3346004E3120 /* ItauURLTests.swift in Sources */,
 				A7D39A3623DB3346004E3120 /* NetworkRequesterTests.swift in Sources */,
+				A7D39A3A23DB37AD004E3120 /* RepositoriesModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
